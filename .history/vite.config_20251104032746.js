@@ -4,7 +4,7 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [vue()],
-  base: '/news_snap/', 
+  base: '/frontend_communitrade/', // 👈 add this line
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
