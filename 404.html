@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <link rel="icon" type="image/svg+xml" href="/news_snap/vite.svg" />
+    <script>
+      // Capture the intended path and redirect to index.html
+      const path = window.location.pathname;
+      const search = window.location.search;
+      const hash = window.location.hash;
+      const newPath = `/news_snap/index.html?redirect=${encodeURIComponent(path + search + hash)}`;
+      window.location.replace(newPath);
+    </script>
+  </head>
+  <body>
+    <p>Redirecting...</p>
+  </body>
+</html>
